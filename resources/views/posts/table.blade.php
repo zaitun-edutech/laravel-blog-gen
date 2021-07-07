@@ -2,7 +2,7 @@
     <table class="table" id="posts-table">
         <thead>
             <tr>
-                <th>Keteerangan</th>
+                <th>Keterangan</th>
         <th>Image</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -11,7 +11,7 @@
         @foreach($posts as $post)
             <tr>
                 <td>{{ $post->keteerangan }}</td>
-            <td> <img height="70" src="{{ $post->image }}"> </td>
+            <td> <img height="70"  src="{{ $post->image }}"> </td>
                 <td width="120">
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
